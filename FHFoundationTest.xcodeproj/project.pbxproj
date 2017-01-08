@@ -14,6 +14,22 @@
 		3ADEDC991E2226FF00AB016B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ADEDC981E2226FF00AB016B /* Assets.xcassets */; };
 		3ADEDC9C1E2226FF00AB016B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ADEDC9A1E2226FF00AB016B /* LaunchScreen.storyboard */; };
 		3ADEDCA71E2226FF00AB016B /* FHFoundationTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADEDCA61E2226FF00AB016B /* FHFoundationTestTests.m */; };
+		3ADEDCBA1E22272700AB016B /* FHFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ADEDCB81E22272700AB016B /* FHFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3ADEDCBD1E22272700AB016B /* FHFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ADEDCB61E22272700AB016B /* FHFoundation.framework */; };
+		3ADEDCBE1E22272700AB016B /* FHFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3ADEDCB61E22272700AB016B /* FHFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3ADEDCD01E22276C00AB016B /* NSArray+SafeCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ADEDCC51E22276C00AB016B /* NSArray+SafeCategory.h */; };
+		3ADEDCD11E22276C00AB016B /* NSArray+SafeCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADEDCC61E22276C00AB016B /* NSArray+SafeCategory.m */; };
+		3ADEDCD21E22276C00AB016B /* NSDictionary+SafeCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ADEDCC81E22276C00AB016B /* NSDictionary+SafeCategory.h */; };
+		3ADEDCD31E22276C00AB016B /* NSDictionary+SafeCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADEDCC91E22276C00AB016B /* NSDictionary+SafeCategory.m */; };
+		3ADEDCD41E22276C00AB016B /* NSNull+SafeCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ADEDCCB1E22276C00AB016B /* NSNull+SafeCategory.h */; };
+		3ADEDCD51E22276C00AB016B /* NSNull+SafeCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADEDCCC1E22276C00AB016B /* NSNull+SafeCategory.m */; };
+		3ADEDCD61E22276C00AB016B /* NSObject+SafeCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ADEDCCD1E22276C00AB016B /* NSObject+SafeCategory.h */; };
+		3ADEDCD71E22276C00AB016B /* NSObject+SafeCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADEDCCE1E22276C00AB016B /* NSObject+SafeCategory.m */; };
+		3ADEDCD81E22276C00AB016B /* SafeCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ADEDCCF1E22276C00AB016B /* SafeCategory.h */; };
+		3ADEDCDF1E22277800AB016B /* EXTRuntimeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ADEDCDA1E22277800AB016B /* EXTRuntimeExtensions.h */; };
+		3ADEDCE01E22277800AB016B /* EXTRuntimeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADEDCDB1E22277800AB016B /* EXTRuntimeExtensions.m */; };
+		3ADEDCE11E22277800AB016B /* FHThread.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ADEDCDD1E22277800AB016B /* FHThread.h */; };
+		3ADEDCE21E22277800AB016B /* FHThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADEDCDE1E22277800AB016B /* FHThread.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +40,28 @@
 			remoteGlobalIDString = 3ADEDC881E2226FF00AB016B;
 			remoteInfo = FHFoundationTest;
 		};
+		3ADEDCBB1E22272700AB016B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3ADEDC811E2226FF00AB016B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3ADEDCB51E22272700AB016B;
+			remoteInfo = FHFoundation;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3ADEDCC21E22272700AB016B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3ADEDCBE1E22272700AB016B /* FHFoundation.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3ADEDC891E2226FF00AB016B /* FHFoundationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FHFoundationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +77,22 @@
 		3ADEDCA21E2226FF00AB016B /* FHFoundationTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FHFoundationTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ADEDCA61E2226FF00AB016B /* FHFoundationTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FHFoundationTestTests.m; sourceTree = "<group>"; };
 		3ADEDCA81E2226FF00AB016B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3ADEDCB61E22272700AB016B /* FHFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FHFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ADEDCB81E22272700AB016B /* FHFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FHFoundation.h; sourceTree = "<group>"; };
+		3ADEDCB91E22272700AB016B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3ADEDCC51E22276C00AB016B /* NSArray+SafeCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SafeCategory.h"; sourceTree = "<group>"; };
+		3ADEDCC61E22276C00AB016B /* NSArray+SafeCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SafeCategory.m"; sourceTree = "<group>"; };
+		3ADEDCC81E22276C00AB016B /* NSDictionary+SafeCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SafeCategory.h"; sourceTree = "<group>"; };
+		3ADEDCC91E22276C00AB016B /* NSDictionary+SafeCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SafeCategory.m"; sourceTree = "<group>"; };
+		3ADEDCCB1E22276C00AB016B /* NSNull+SafeCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNull+SafeCategory.h"; sourceTree = "<group>"; };
+		3ADEDCCC1E22276C00AB016B /* NSNull+SafeCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNull+SafeCategory.m"; sourceTree = "<group>"; };
+		3ADEDCCD1E22276C00AB016B /* NSObject+SafeCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SafeCategory.h"; sourceTree = "<group>"; };
+		3ADEDCCE1E22276C00AB016B /* NSObject+SafeCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SafeCategory.m"; sourceTree = "<group>"; };
+		3ADEDCCF1E22276C00AB016B /* SafeCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeCategory.h; sourceTree = "<group>"; };
+		3ADEDCDA1E22277800AB016B /* EXTRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTRuntimeExtensions.h; sourceTree = "<group>"; };
+		3ADEDCDB1E22277800AB016B /* EXTRuntimeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTRuntimeExtensions.m; sourceTree = "<group>"; };
+		3ADEDCDD1E22277800AB016B /* FHThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FHThread.h; sourceTree = "<group>"; };
+		3ADEDCDE1E22277800AB016B /* FHThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHThread.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,10 +100,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ADEDCBD1E22272700AB016B /* FHFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		3ADEDC9F1E2226FF00AB016B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3ADEDCB21E22272700AB016B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -65,6 +126,7 @@
 			children = (
 				3ADEDC8B1E2226FF00AB016B /* FHFoundationTest */,
 				3ADEDCA51E2226FF00AB016B /* FHFoundationTestTests */,
+				3ADEDCB71E22272700AB016B /* FHFoundation */,
 				3ADEDC8A1E2226FF00AB016B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +136,7 @@
 			children = (
 				3ADEDC891E2226FF00AB016B /* FHFoundationTest.app */,
 				3ADEDCA21E2226FF00AB016B /* FHFoundationTestTests.xctest */,
+				3ADEDCB61E22272700AB016B /* FHFoundation.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,7 +174,95 @@
 			path = FHFoundationTestTests;
 			sourceTree = "<group>";
 		};
+		3ADEDCB71E22272700AB016B /* FHFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				3ADEDCD91E22277800AB016B /* Runtime */,
+				3ADEDCDC1E22277800AB016B /* Thread */,
+				3ADEDCC31E22275B00AB016B /* SafeCategory */,
+				3ADEDCB81E22272700AB016B /* FHFoundation.h */,
+				3ADEDCB91E22272700AB016B /* Info.plist */,
+			);
+			path = FHFoundation;
+			sourceTree = "<group>";
+		};
+		3ADEDCC31E22275B00AB016B /* SafeCategory */ = {
+			isa = PBXGroup;
+			children = (
+				3ADEDCC41E22276C00AB016B /* Array */,
+				3ADEDCC71E22276C00AB016B /* NSDictionary */,
+				3ADEDCCA1E22276C00AB016B /* NSObject */,
+				3ADEDCCF1E22276C00AB016B /* SafeCategory.h */,
+			);
+			path = SafeCategory;
+			sourceTree = "<group>";
+		};
+		3ADEDCC41E22276C00AB016B /* Array */ = {
+			isa = PBXGroup;
+			children = (
+				3ADEDCC51E22276C00AB016B /* NSArray+SafeCategory.h */,
+				3ADEDCC61E22276C00AB016B /* NSArray+SafeCategory.m */,
+			);
+			path = Array;
+			sourceTree = "<group>";
+		};
+		3ADEDCC71E22276C00AB016B /* NSDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				3ADEDCC81E22276C00AB016B /* NSDictionary+SafeCategory.h */,
+				3ADEDCC91E22276C00AB016B /* NSDictionary+SafeCategory.m */,
+			);
+			path = NSDictionary;
+			sourceTree = "<group>";
+		};
+		3ADEDCCA1E22276C00AB016B /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				3ADEDCCB1E22276C00AB016B /* NSNull+SafeCategory.h */,
+				3ADEDCCC1E22276C00AB016B /* NSNull+SafeCategory.m */,
+				3ADEDCCD1E22276C00AB016B /* NSObject+SafeCategory.h */,
+				3ADEDCCE1E22276C00AB016B /* NSObject+SafeCategory.m */,
+			);
+			path = NSObject;
+			sourceTree = "<group>";
+		};
+		3ADEDCD91E22277800AB016B /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				3ADEDCDA1E22277800AB016B /* EXTRuntimeExtensions.h */,
+				3ADEDCDB1E22277800AB016B /* EXTRuntimeExtensions.m */,
+			);
+			path = Runtime;
+			sourceTree = "<group>";
+		};
+		3ADEDCDC1E22277800AB016B /* Thread */ = {
+			isa = PBXGroup;
+			children = (
+				3ADEDCDD1E22277800AB016B /* FHThread.h */,
+				3ADEDCDE1E22277800AB016B /* FHThread.m */,
+			);
+			path = Thread;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3ADEDCB31E22272700AB016B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ADEDCD01E22276C00AB016B /* NSArray+SafeCategory.h in Headers */,
+				3ADEDCD61E22276C00AB016B /* NSObject+SafeCategory.h in Headers */,
+				3ADEDCDF1E22277800AB016B /* EXTRuntimeExtensions.h in Headers */,
+				3ADEDCBA1E22272700AB016B /* FHFoundation.h in Headers */,
+				3ADEDCD81E22276C00AB016B /* SafeCategory.h in Headers */,
+				3ADEDCD21E22276C00AB016B /* NSDictionary+SafeCategory.h in Headers */,
+				3ADEDCE11E22277800AB016B /* FHThread.h in Headers */,
+				3ADEDCD41E22276C00AB016B /* NSNull+SafeCategory.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		3ADEDC881E2226FF00AB016B /* FHFoundationTest */ = {
@@ -121,10 +272,12 @@
 				3ADEDC851E2226FF00AB016B /* Sources */,
 				3ADEDC861E2226FF00AB016B /* Frameworks */,
 				3ADEDC871E2226FF00AB016B /* Resources */,
+				3ADEDCC21E22272700AB016B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3ADEDCBC1E22272700AB016B /* PBXTargetDependency */,
 			);
 			name = FHFoundationTest;
 			productName = FHFoundationTest;
@@ -149,6 +302,24 @@
 			productReference = 3ADEDCA21E2226FF00AB016B /* FHFoundationTestTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		3ADEDCB51E22272700AB016B /* FHFoundation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3ADEDCBF1E22272700AB016B /* Build configuration list for PBXNativeTarget "FHFoundation" */;
+			buildPhases = (
+				3ADEDCB11E22272700AB016B /* Sources */,
+				3ADEDCB21E22272700AB016B /* Frameworks */,
+				3ADEDCB31E22272700AB016B /* Headers */,
+				3ADEDCB41E22272700AB016B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FHFoundation;
+			productName = FHFoundation;
+			productReference = 3ADEDCB61E22272700AB016B /* FHFoundation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -167,6 +338,10 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 3ADEDC881E2226FF00AB016B;
 					};
+					3ADEDCB51E22272700AB016B = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 3ADEDC841E2226FF00AB016B /* Build configuration list for PBXProject "FHFoundationTest" */;
@@ -184,6 +359,7 @@
 			targets = (
 				3ADEDC881E2226FF00AB016B /* FHFoundationTest */,
 				3ADEDCA11E2226FF00AB016B /* FHFoundationTestTests */,
+				3ADEDCB51E22272700AB016B /* FHFoundation */,
 			);
 		};
 /* End PBXProject section */
@@ -200,6 +376,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		3ADEDCA01E2226FF00AB016B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3ADEDCB41E22272700AB016B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -227,6 +410,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3ADEDCB11E22272700AB016B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ADEDCD11E22276C00AB016B /* NSArray+SafeCategory.m in Sources */,
+				3ADEDCE21E22277800AB016B /* FHThread.m in Sources */,
+				3ADEDCE01E22277800AB016B /* EXTRuntimeExtensions.m in Sources */,
+				3ADEDCD51E22276C00AB016B /* NSNull+SafeCategory.m in Sources */,
+				3ADEDCD71E22276C00AB016B /* NSObject+SafeCategory.m in Sources */,
+				3ADEDCD31E22276C00AB016B /* NSDictionary+SafeCategory.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -234,6 +430,11 @@
 			isa = PBXTargetDependency;
 			target = 3ADEDC881E2226FF00AB016B /* FHFoundationTest */;
 			targetProxy = 3ADEDCA31E2226FF00AB016B /* PBXContainerItemProxy */;
+		};
+		3ADEDCBC1E22272700AB016B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3ADEDCB51E22272700AB016B /* FHFoundation */;
+			targetProxy = 3ADEDCBB1E22272700AB016B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -393,6 +594,46 @@
 			};
 			name = Release;
 		};
+		3ADEDCC01E22272700AB016B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FHFoundation/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenfh.FHFoundation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3ADEDCC11E22272700AB016B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FHFoundation/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenfh.FHFoundation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -418,6 +659,14 @@
 			buildConfigurations = (
 				3ADEDCAF1E2226FF00AB016B /* Debug */,
 				3ADEDCB01E2226FF00AB016B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3ADEDCBF1E22272700AB016B /* Build configuration list for PBXNativeTarget "FHFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3ADEDCC01E22272700AB016B /* Debug */,
+				3ADEDCC11E22272700AB016B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
