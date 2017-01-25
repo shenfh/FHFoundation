@@ -33,5 +33,5 @@ Pod::Spec.new do |s|
   s.resources = 'FHFoundation/**/*.{xib,json,png,jpg,gif,js}'
 
 
-  #s.dependency 'ReactiveCocoa' 
+  s.dependency 'FHJSONObject',:git => 'https://github.com/shenfh/FHJSONObject.git' 
 end
