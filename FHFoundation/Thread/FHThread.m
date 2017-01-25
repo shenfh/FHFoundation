@@ -7,27 +7,25 @@
 //
 
 #import "FHThread.h"
-@implementation FHThread
 
-+ (void)runInMain:(FHThreadBlock)block {
+static inline void runInMain(FHThreadBlock block ) {
     if (block == nil) {
         return;
     }
     if ([NSThread isMainThread]) {
         block();
     } else {
-       dispatch_async([self ququeWithLevel:FHQueueLevelMain], block);
+        dispatch_async(ququeWithLevel(FHQueueLevelMain), block);
     }
 }
-
-+ (void)runAsyn:(FHThreadBlock)block level:(FHQueueLevel)level {
+static inline void runAsyn(FHThreadBlock block,FHQueueLevel level) {
     if (block == nil) {
         return;
     }
-    dispatch_async([self ququeWithLevel:level], block);
+    dispatch_async(ququeWithLevel(level), block);
 }
 
-+ (dispatch_queue_t)ququeWithLevel:(FHQueueLevel)level {
+static inline dispatch_queue_t ququeWithLevel(FHQueueLevel level) {
     switch (level) {
         case FHQueueLevelMain:{
             return dispatch_get_main_queue();
@@ -45,5 +43,6 @@
             return dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
         }
     }
+
 }
-@end
+
