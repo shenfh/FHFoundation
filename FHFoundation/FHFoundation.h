@@ -18,3 +18,4 @@ FOUNDATION_EXPORT const unsigned char FHFoundationVersionString[];
 
 #import <FHFoundation/SafeCategory.h>
 #import <FHFoundation/FHThread.h>
+#import <FHFoundation/FHCategory.h>

@@ -8,7 +8,7 @@
 
 #import "FHThread.h"
 
-static inline void runInMain(FHThreadBlock block ) {
+inline void runInMain(FHThreadBlock block ) {
     if (block == nil) {
         return;
     }
@@ -18,14 +18,14 @@ static inline void runInMain(FHThreadBlock block ) {
         dispatch_async(ququeWithLevel(FHQueueLevelMain), block);
     }
 }
-static inline void runAsyn(FHThreadBlock block,FHQueueLevel level) {
+inline void runAsyn(FHThreadBlock block,FHQueueLevel level) {
     if (block == nil) {
         return;
     }
     dispatch_async(ququeWithLevel(level), block);
 }
 
-static inline dispatch_queue_t ququeWithLevel(FHQueueLevel level) {
+inline dispatch_queue_t ququeWithLevel(FHQueueLevel level) {
     switch (level) {
         case FHQueueLevelMain:{
             return dispatch_get_main_queue();

@@ -24,7 +24,7 @@ typedef NS_ENUM(NSUInteger,FHQueueLevel) {
  
  @param block FHThreadBlock
  */
-static inline void runInMain(FHThreadBlock block );
+extern void runInMain(FHThreadBlock block );
 
 /**
  后台线程里面异步执行
@@ -32,11 +32,11 @@ static inline void runInMain(FHThreadBlock block );
  @param block FHThreadBlock
  @param level FHQueueLevel
  */
-static inline void runAsyn(FHThreadBlock block,FHQueueLevel level);
+extern void runAsyn(FHThreadBlock block,FHQueueLevel level);
 
 /**
  线程队列
  */
-static inline dispatch_queue_t ququeWithLevel(FHQueueLevel level);
+extern dispatch_queue_t ququeWithLevel(FHQueueLevel level);
 
 NS_ASSUME_NONNULL_END
