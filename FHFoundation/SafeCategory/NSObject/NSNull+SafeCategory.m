@@ -31,12 +31,11 @@
 
 
 - (NSMethodSignature *)SafeMethodSignatureForSelector:(SEL)selector {
-//    NSMethodSignature *sig = [self SafeMethodSignatureForSelector:selector];
-//    if (sig) {
-//        return sig;
-//    }
-//    return [NSMethodSignature signatureWithObjCTypes:@encode(void)];
-     NSLog(@" %@ -- %@ 方式没有实现", NSStringFromClass(self.class),NSStringFromSelector(selector));
-    return ext_globalMethodSignatureForSelector(selector);
+    NSLog(@" %@ -- %@ 方式没有实现", NSStringFromClass(self.class),NSStringFromSelector(selector));
+    NSMethodSignature *sig = [self SafeMethodSignatureForSelector:selector];
+    if (sig) {
+        return sig;
+    }
+    return [NSMethodSignature signatureWithObjCTypes:@encode(void)];
 }
 @end

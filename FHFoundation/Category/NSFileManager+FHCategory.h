@@ -18,13 +18,13 @@ NS_ASSUME_NONNULL_BEGIN
 
  @return Path.
  */
-+ (NSURL *)fh_documentDirectory;
++ (NSString *)fh_documentDirectory;
 
-+ (NSURL *)fh_libraryDirectory;
++ (NSString *)fh_libraryDirectory;
 
-+ (NSURL *)fh_cacheDirectory;
++ (NSString *)fh_cacheDirectory;
 
-+ (NSURL *)fh_tmpDirectory;
++ (NSString *)fh_tmpDirectory;
 /**
  Create File if not exist.
 

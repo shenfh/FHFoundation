@@ -10,23 +10,21 @@
 
 @implementation NSFileManager (FHCategory)
 
-+ (NSURL*)fh_documentDirectory {
-    NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
-    return [NSURL URLWithString:path];
++ (NSString*)fh_documentDirectory {
+    return  [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
 }
 
-+ (NSURL*)fh_libraryDirectory {
-    NSString *path = [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) firstObject];
-    return [NSURL URLWithString:path];
++ (NSString*)fh_libraryDirectory {
+    return [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) firstObject];
 }
 
-+ (NSURL*)fh_cacheDirectory {
-    NSString *path = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject];
-    return [NSURL URLWithString:path];
++ (NSString*)fh_cacheDirectory {
+    return [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject];
+    
 }
 
-+ (NSURL*)fh_tmpDirectory {
-    return [NSURL URLWithString:NSTemporaryDirectory()];
++ (NSString*)fh_tmpDirectory {
+    return NSTemporaryDirectory();
    
 }
 
@@ -80,7 +78,7 @@
     
     for (NSURL *fileURL in contents) {
         if ([[fileURL absoluteString]hasSuffix:suffix]) {
-            [self fh_deleteFile:[fileURL absoluteString]];
+            [fileManager removeItemAtURL:fileURL error:nil];
         }
     }
 }
@@ -96,7 +94,7 @@
                                                                 error:nil];
     
     for (NSURL *fileURL in contents) {
-        [self fh_deleteFile:[fileURL absoluteString]];
+        [fileManager removeItemAtURL:fileURL error:nil];
     }
 }
 @end
